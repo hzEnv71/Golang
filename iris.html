@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://localhost:8080/form_post" method="post" >
+    <input type="text" value="play" name="message"><br>
+    <input type="text" value="game" name="nick"><br>
+<!--    <input type="checkbox" value="music" name="hobby"><br>-->
+    <input type="submit" value="登录">
+</form>
+
+
+
+<h1>{{ .message }}</h1>
+<h1>static_validation: {{ urlpath "static_validation" }}</h1>
+<b1>Home: {{ urlpath "home" }}</b1>
+<b1>About: {{ urlpath "about" }}</b1>
+<b1>Page 17: {{ urlpath "page" "17" }}</b1>
+
+
+<h1>{{.message}}</h1>
+<strong>{{greet "to you"}}</strong>
+</body>
+</html>
